@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HERE WE GO</title>
+  <style>
+    :root{
+      --bg: #000000;
+      --gold: #FFB612; /* Steelers gold */
+      --muted: #d4b86a;
+    }
+    html,body{height:100%;margin:0}
+    body{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:var(--bg);
+      color:var(--gold);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      text-rendering:optimizeLegibility;
+    }
+    .wrap{
+      text-align:center;
+      padding:1rem;
+    }
+    .logo{
+      width:140px;
+      height:auto;
+      display:block;
+      margin:0 auto 1rem auto;
+      filter: drop-shadow(0 6px 18px rgba(0,0,0,0.6));
+    }
+    .message{
+      font-size: clamp(2rem, 8vw, 6rem);
+      font-weight:800;
+      letter-spacing: 0.02em;
+      line-height:1;
+    }
+    /* subtle gold outline for contrast on black */
+    .message{ text-shadow: 0 2px 0 rgba(0,0,0,0.6), 0 6px 18px rgba(0,0,0,0.6); }
+    /* small caption */
+    .caption{color:var(--muted);font-size:0.9rem;margin-top:0.5rem}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- Optional: place a Steelers logo at images/steelers-logo.png. The image will hide itself if not found. -->
+    <img src="images/steelers-logo.png" alt="Steelers logo" class="logo" onerror="this.style.display='none'">
+    <div class="message">HERE WE GO</div>
+    <div class="caption">Black & Gold theme</div>
+  </div>
+</body>
+</html>
